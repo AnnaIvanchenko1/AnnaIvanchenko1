@@ -59,5 +59,13 @@
 <hr>
 
 ### :file_folder: Мои проекты : 
-|Название проекта| Описание проекта| Стек|
-|----------------|-----------------|-----|
+| Название проекта | Описание проекта | Стек |
+|------------------|------------------|------|
+| [RAG-Biography Chat](https://github.com/AnnaIvanchenko1/RAG-Assistant-Prototype-for-a-Dialog-System) | Диалоговая RAG-система для поиска биографий известных личностей. Построила ChromaDB из 100+ текстов, реализовала гибридный поиск (локальная база + DuckDuckGo при нехватке данных), интегрировала диалоговый режим и Llama-3.1 генерацию. | Python, LangChain, ChromaDB, Llama-3.1-AWQ-INT4, DuckDuckGo, BeautifulSoup |
+| [Fine-tuning исследование](https://github.com/AnnaIvanchenko1/Fine_tuning_research) | Сравнительный анализ методов обучения ViT на датасете Fantastic-Beasts: vanilla training, LoRA fine-tuning, Transfer Learning, Incremental Learning. Подготовка данных, обучение, оценка по метрикам точности и loss. | PyTorch, HuggingFace, ViT, LoRA, scikit-learn, pandas, NumPy |
+| [Распознавание номеров Гонконга](https://github.com/AnnaIvanchenko1/Computer-Vision-Project-for-Detecting-Car-Numbers) | End-to-end пайплайн распознавания номеров: YOLOv8/GroundingDINO детекция (mAP 0.85) + Tesseract OCR (CRR 0.75). Анализ ошибок, ручная разметка, предобработка изображений в условиях Гонконга. | Python, OpenCV, YOLOv8, GroundingDINO, Tesseract, Pandas, Matplotlib |
+| [OCR. Распознавание Штрих-кода](https://github.com/AnnaIvanchenko1/OCR.Barcode-recognition) | CRNN (ResNet50+GRU) для распознавания EAN-13 на 44k изображений продуктов. Сравнение CTC vs Classification loss, grayscale preprocessing, метрики CER, WER, визуализация ошибок. | PyTorch, ResNet50, GRU, Levenshtein, Matplotlib |
+| [BERT NER оптимизация](https://github.com/AnnaIvanchenko1/Reducing-model-size) | Сжатие BERT-base для NER (CoNLL-2003): SVD факторизация word embeddings + Knowledge Distillation. Fine-tuning сжатых моделей с сохранением F1-score. | PyTorch, HuggingFace, SVD, Knowledge Distillation, seqeval |
+| [BERT NER](https://github.com/AnnaIvanchenko1/NER-CoNLL) | Сравнение NER архитектур на CoNLL-2003: BiLSTM, BiLSTM+Attention, BERT/DistilBERT. Custom предобработка, мультиметрики F1/accuracy | PyTorch, HuggingFace, BERT, BiLSTM, TensorBoard, seqeval |
+| [Active Learning](https://github.com/AnnaIvanchenko1/Active-Learning) | Сравнение 4 стратегий Active Learning на 20 Newsgroups: Random, ClusterInit, QueryCommittee, LeastConf+Cluster. Бюджет 1M слов, F1-macro траектории | Python, scikit-learn, NumPy, Matplotlib, TF-IDF, MultinomialNB, KMeans |
+| [Прогноз продаж Favorita](https://github.com/AnnaIvanchenko1/Favorita-sales-forecast) | Прогнозирование продаж по семействам продуктов Corporación Favorita. Лаги, скользящие средние, EWMA, XGBoost/LightGBM. GridSearchCV, feature importance, MAE | Python, Pandas, scikit-learn, XGBoost, LightGBM, Matplotlib |
